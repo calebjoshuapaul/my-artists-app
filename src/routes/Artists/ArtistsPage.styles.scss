@@ -1,0 +1,26 @@
+.artistsPage {
+  max-width: 600px;
+  line-height: 25px;
+
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  table {
+    width: 100%;
+    text-align: left;
+    outline: 2px solid;
+    padding: 5px;
+    margin: 25px 0;
+    border-collapse: collapse;
+    th,
+    td {
+      outline: 1px solid;
+      padding: 5px;
+    }
+    thead {
+      background-color: rgba($color: #000000, $alpha: 0.075);
+    }
+  }
+}

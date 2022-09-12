@@ -1,0 +1,13 @@
+.searchResult {
+  ol {
+    padding-left: 30px;
+  }
+  li {
+    padding: 6px 20px;
+
+    &:hover {
+      background: rgba($color: #000000, $alpha: 0.05);
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.searchBox {
+  width: 100%;
+  margin: 25px 0;
+
+  &__input {
+    width: 100%;
+    min-width: 250px;
+    padding: 10px;
+    margin: 0;
+    border: none;
+    outline: 1px solid;
+  }
+
+  button {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    outline: 1px solid;
+    cursor: pointer;
+  }
+}
