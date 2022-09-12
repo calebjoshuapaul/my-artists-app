@@ -4,10 +4,15 @@ import "./ArtistsPage.styles.scss";
 
 function ArtistsPage() {
   const { artistData } = useContext(ArtistContext);
-  const [data] = artistData.artists;
-  console.log(data);
 
-  if (artistData) {
+  if (!artistData?.artists) {
+    return (
+      <div>
+        <h2>No info about the artist was found</h2>
+      </div>
+    );
+  } else {
+    const [data] = artistData?.artists;
     return (
       <div className="artistsPage">
         <img src={data.strArtistBanner} alt="artist banner" />
@@ -33,7 +38,7 @@ function ArtistsPage() {
         <p>{data.strBiographyEN}</p>
       </div>
     );
-  } else return <h1>Home</h1>;
+  }
 }
 
 export default ArtistsPage;

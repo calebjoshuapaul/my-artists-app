@@ -7,7 +7,7 @@ import "./SearchResult.styles.scss";
 function SearchResult() {
   const { searchData } = useContext(ArtistContext);
 
-  if (searchData.data) {
+  if (searchData?.data?.search?.artists) {
     return (
       <div className="searchResult">
         <ol>

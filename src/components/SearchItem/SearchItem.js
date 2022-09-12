@@ -12,7 +12,7 @@ function SearchItem({ artist }) {
       .then((response) => response.json())
       .then((data) => setArtistData(data));
 
-    navigate(`/${artist.id}`);
+    navigate(`/${name}`);
   };
 
   return <li onClick={handleArtistClick}>{name}</li>;
